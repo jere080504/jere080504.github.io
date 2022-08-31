@@ -1,0 +1,242 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F6F2F6;
+    margin: 0 auto;
+}
+
+header {
+    /* width: 100%; */
+    /* height: 100px; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #B7A7AE;
+}
+
+header .logo-titulo {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F6F2F6;
+}
+
+.logo-titulo h2 {
+    /* margin-right: 30px; */
+    /* font-size: 1.1rem; */
+    text-transform: uppercase;
+    color: #58545B;
+    font-weight: bold;
+}
+
+header nav {
+    padding: 0 20px;
+    height: 100%;
+}
+
+nav .lista-pestañas {
+    height: inherit;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 50px;
+}
+
+.lista-pestañas a {
+    font-size: 25px;
+    /* font-size: 1.2rem; */
+    color: #fff;
+    display: grid;
+    place-content: center;
+    padding: 8px 15px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.lista-pestañas .pestaña {
+    border-radius: 5px;
+    background-color: #F6F2F6;
+    color: #58545B;
+}
+
+.lista-pestañas a:hover {
+    background-color: #F6F2F6;
+    color: #58545B;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 750ms ease;
+    transition: color 750ms ease;
+}
+
+
+/* main {
+    width: 100%;
+    min-height: calc(100vh - 200px);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+main {
+    /* width: 100%; */
+    display: flex;
+    margin-left: 7em;
+    margin-top: 3em;
+}
+
+.encriptado>h2 {
+    text-align: center;
+    font-size: 0.6em;
+    color: #58545B;
+    margin-bottom: 1.5em;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #F6F2F6;
+    box-shadow: 1px 1px 10px rgb(88 84 91 / 40%);
+    cursor: default;
+}
+
+.input-texto {
+    /* margin-top: 0px; */
+    border: none;
+    background-color: #F6F2F6;
+}
+
+.input-texto {
+    width: 600px;
+    height: 250px;
+    resize: none;
+    padding: 20px;
+    z-index: 1;
+    font-size: 0.6em;
+    font-family: "Montserrat";
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 10px rgb(88 84 91 / 40%);
+    outline: none;
+}
+
+.copiar {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 205px;
+    cursor: pointer;
+    transition: 500ms transform;
+}
+
+.copiar:hover {
+    transform: scale(1.1);
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.botones button {
+    width: 30%;
+    flex-grow: 1;
+    padding: 13px 0;
+    font-family: "Montserrat";
+    font-size: 0.8em;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: 500ms transform;
+    box-shadow: 1px 1px 10px rgb(88 84 91 / 40%);
+}
+
+.botones button:hover {
+    transform: scale(1.1);
+}
+
+.encriptar {
+    background-color: #58545B;
+    color: #E1D5D9;
+}
+
+.desencriptar {
+    margin-left: 30px;
+    background: #E1D5D9;
+    color: #58545B;
+}
+
+.informacion {
+    font-size: 15px;
+}
+
+
+/* .segparte {
+    border-style: solid;
+    border-radius: 20px;
+} */
+
+.dentro {
+    /* background-color: #F6F2F6;
+    box-shadow: 1px 1px 10px rgb(88 84 91 / 40%);
+    border-radius: 5px; */
+    text-align: center;
+    background-position: center;
+}
+
+.fondo h2 {
+    margin-top: -12.5em;
+    font-weight: bold;
+    font-size: .7em;
+    width: 382px;
+    padding: 1.82em;
+    margin-left: 14.3em;
+    /* background: #F6F2F6; */
+}
+
+.mensaje {
+    position: inherit;
+    resize: none;
+    border: none;
+    margin-top: -0.2em;
+    background-image: url("imagenes/undraw_Online_test_re_kyfx-modified.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 450px;
+    padding: 0.5em 1em;
+    height: 460px;
+    width: 400px;
+    margin-left: 10em;
+    outline: none;
+    cursor: default;
+    background-color: #F6F2F6;
+    box-shadow: 1px 1px 10px rgb(88 84 91 / 40%);
+    border-radius: 5px;
+}
+
+.frase1 {
+    margin-top: -9em;
+    font-weight: bold;
+    font-size: .7em;
+    width: 382px;
+    padding: 1.82em;
+    margin-left: 14.3em;
+}
+
+.frase2 {
+    margin-top: -3.5em;
+    font-weight: bold;
+    font-size: .5em;
+    width: 250px;
+    padding: 0 3.2em 5em;
+    margin-left: 23.4em;
+}

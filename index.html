@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-titulo">
+            <img class="logo" src="imagenes/Logo.png" alt="Logo de alura con la inicial de la letra a">
+
+        </div>
+        <nav>
+            <ul class="lista-pestañas">
+                <li><a href="Inicio.html" class="pestañas">Inicio</a></li>
+                <li><a href="index.html" class="pestaña">Encriptador</a></li>
+                <li><a href="Ahorcado.html" class="pestañas">Ahorcado</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="encriptado">
+            <h2>
+                INGRESE EL TEXTO PARA ENCRIPTAR/DESENCRIPTAR
+            </h2>
+            <div class="textarea">
+                <textarea class="input-texto" id="input-texto" cols="40" rows="6" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+
+            <div class="botones">
+
+                <button class="encriptar" id="encriptar" onclick="btnEncriptar()">Encriptar</button>
+
+                <button class="desencriptar" id="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="segparte">
+                <div class="dentro">
+                    <textarea class="mensaje" id="mensaje" spellcheck="none" rows="4" readonly></textarea>
+
+
+                    <div class="labels">
+                        <h2 class="frase1" id="frase1">Ningún mensaje fue encontrado</h2>
+                        <p class="frase2" id="frase2">Ingresa el texto que deseas encriptar o desencriptar.</p>
+                    </div>
+                </div>
+                <div class="fuera">
+                    <button class="copiar" id="copiar" onclick="copiar()" style="visibility: hidden;">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <img src="./images/github.svg" alt="" />
+            <img src="./images/linkedin.svg" alt="" />
+            <img src="./images/twitter.svg" alt="" />
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
